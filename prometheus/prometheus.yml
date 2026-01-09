@@ -1,0 +1,19 @@
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: 'notification-gateway'
+    static_configs:
+      - targets: ['notification-gateway:8080']
+
+  - job_name: 'sms-service'
+    static_configs:
+      - targets: ['sms-service:8080']
+
+  - job_name: 'email-service'
+    static_configs:
+      - targets: ['email-service:8080']
+
+  - job_name: 'push-service'
+    static_configs:
+      - targets: ['push-service:8080']

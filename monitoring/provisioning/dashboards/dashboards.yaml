@@ -1,0 +1,9 @@
+﻿apiVersion: 1
+
+providers:
+  - name: "Notification Dashboards"
+    folder: "Notifications"
+    type: file
+    options:
+      path: /var/lib/grafana/dashboards
+      scanInterval: 10s
